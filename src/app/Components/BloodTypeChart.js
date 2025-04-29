@@ -54,9 +54,7 @@ export default function BloodTypeChart() {
             />
           ))}
         </Pie>
-        <Tooltip 
-          formatter={(value, name) => [`Count: ${value}`, `Blood Type: ${name}`]}
-        />
+        
         <Legend />
       </PieChart>
     </ResponsiveContainer>

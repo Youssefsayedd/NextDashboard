@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Label } from "recharts";
 
 const HeightWeightChart = () => {
-  // Get data from Redux store
+  
   const userData = useSelector((state) => state.UserData.users);
 
-  // Transform and sort data for the chart
+  
   const chartData = userData?.map(user => ({
     height: user.height,
     weight: user.weight,

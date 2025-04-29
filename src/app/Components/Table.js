@@ -67,9 +67,12 @@ const DataTable = () => {
     <div className="w-full mx-auto bg-gradient-to-br from-[#1b3a4b]/40 to-[#162736]/60 backdrop-blur-lg rounded-xl p-4 border border-white/10 shadow-[0_0_15px_rgba(124,92,255,0.15)]">
       {/* Search and page size controls */}
       <div className="mb-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+       
         <input
           type="text"
           placeholder="Search users..."
+          value={filterText}
+          onChange={(e) => setFilterText(e.target.value)}
           className="w-full sm:w-auto px-4 py-2 rounded-lg border border-white/20 bg-white/10 text-white placeholder-white/40
                      focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-transparent transition-all"
         />
